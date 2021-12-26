@@ -10,9 +10,6 @@ export async function middleware(req) {
     // we allow requests if either:
     // 1. the request is for next-auth session & provider fetching
     // 2. the token exists
-    if (token && pathname === '/login') {
-        return NextResponse.redirect('/')
-    }
 
     if (pathname.includes('/api/auth') || token) {
         return NextResponse.next()
