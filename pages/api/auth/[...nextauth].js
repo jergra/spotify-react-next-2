@@ -11,7 +11,7 @@ async function refreshAccessToken(token) {
     spotifyApi.setRefreshToken(token.refreshToken)
 
     const {body: refreshedToken} = await spotifyApi.refreshAccessToken()
-    console.log('refreshed token is:', refreshedToken)
+    //console.log('refreshed token is:', refreshedToken)
 
     return {
       ...token,
@@ -38,6 +38,9 @@ export default NextAuth({
     }),
   ],
   secret: process.env.JWT_SECRET,
+  session: {
+    strategy: "jwt",
+  },
   pages: {
     signIn: '/login'
   },
