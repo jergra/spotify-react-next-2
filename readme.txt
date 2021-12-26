@@ -26,3 +26,8 @@ to Vercel. NEXTAUTH_URL would be 'https://spotify-react-next.vercel.app'.
 NEXT_PUBLIC_CLIENT_SECRET and NEXT_PUBLIC_CLIENT_ID are from spotify,
 JWT_SECRET is of the developer's choosing.
 
+
+
+https://spotify-react-next-2.vercel.app/api/auth/callback/spotify
+
+http://localhost:3000/api/auth/callback/spotify
