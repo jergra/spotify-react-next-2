@@ -21,13 +21,17 @@ Needs .env.local file in the root, like this:
 start:
     npm run dev 
 
-To deploy to Vercel, would need to provide the .env.local variables
-to Vercel. NEXTAUTH_URL would be 'https://spotify-react-next.vercel.app'.
+the deployed version does not go past the login page for reasons unknown
+    https://spotify-react-next-2.vercel.app/login
+    this will be deleted soon
+
+
+To deploy to Vercel, need to provide the .env.local variables
+to Vercel. NEXTAUTH_URL is 'https://spotify-react-next-2.vercel.app'.
 NEXT_PUBLIC_CLIENT_SECRET and NEXT_PUBLIC_CLIENT_ID are from spotify,
 JWT_SECRET is of the developer's choosing.
 
 
-
-https://spotify-react-next-2.vercel.app/api/auth/callback/spotify
-
-http://localhost:3000/api/auth/callback/spotify
+these redirect uri's need to be added at spotify:
+    https://spotify-react-next-2.vercel.app/api/auth/callback/spotify
+    http://localhost:3000/api/auth/callback/spotify
